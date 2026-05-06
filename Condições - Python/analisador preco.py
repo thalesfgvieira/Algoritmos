@@ -44,4 +44,3 @@ elif condicao == 3:
     print(f'O produto custará {cores["amarelo"]}R${preco*1.20:.2f}{cores["limpa"]} após receber um aumento de 20% de juros ao realizar o {cores["verde"]}pagamento parcelado de 3x ou mais no cartão.{cores["limpa"]}')
 else:
     print(f'{cores["vermelho"]}ERRO. Escolha uma opção entre 0 e 3.{cores["limpa"]}')
-
