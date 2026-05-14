@@ -25,12 +25,9 @@ try:
         nome = str(input('Digite o nome: ')).strip()
         idade = int(input('Digite a idade: '))
         soma_idade += idade
-        print()
         sexo = str(input(f'''{cores["vermelho"]}Escolha o sexo:{cores["limpa"]}
-
 {cores["azul"]}'M' para masculino{cores["limpa"]}
-{cores["amarelo"]}'F' para feminino{cores["limpa"]}
-                     
+{cores["amarelo"]}'F' para feminino{cores["limpa"]}               
 Digite a sua escolha: ''')).strip().upper()
         print()
         if sexo == 'M':
