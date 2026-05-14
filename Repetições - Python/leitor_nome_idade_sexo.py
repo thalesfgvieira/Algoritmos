@@ -44,7 +44,7 @@ Digite a sua escolha: ''')).strip().upper()
             if idade < 20:
                 mulher_menor_20 += 1
         else:
-            print(f'{cores["vermelho"]}ERRO. Digite um valor válido.{cores["limpa"]}')
+            print(f'{cores["vermelho"]}ERRO. Tente digitar "M" ou "F".{cores["limpa"]}')
             exit()
 except ValueError:
     print(f'{cores["vermelho"]}ERRO. Digite um valor válido.{cores["limpa"]}')
