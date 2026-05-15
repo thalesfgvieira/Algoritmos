@@ -22,12 +22,16 @@ num_mulher = 0
 
 try:
     for c in range (1,5):
+        print(f'{cores["amarelo"]}{'=-'*5} {c}° Pessoa {'=-'*5}{cores["limpa"]}')
         nome = str(input('Digite o nome: ')).strip()
         idade = int(input('Digite a idade: '))
         soma_idade += idade
+        print()
         sexo = str(input(f'''{cores["vermelho"]}Escolha o sexo:{cores["limpa"]}
+
 {cores["azul"]}'M' para masculino{cores["limpa"]}
-{cores["amarelo"]}'F' para feminino{cores["limpa"]}               
+{cores["amarelo"]}'F' para feminino{cores["limpa"]}
+                     
 Digite a sua escolha: ''')).strip().upper()
         print()
         if sexo == 'M':
@@ -44,10 +48,11 @@ Digite a sua escolha: ''')).strip().upper()
             if idade < 20:
                 mulher_menor_20 += 1
         else:
-            print(f'{cores["vermelho"]}ERRO. Tente digitar "M" ou "F".{cores["limpa"]}')
+            print(f'{cores["vermelho"]}ERRO. Digite um valor válido.{cores["limpa"]}')
             exit()
 except ValueError:
     print(f'{cores["vermelho"]}ERRO. Digite um valor válido.{cores["limpa"]}')
+    exit()
 
 media = soma_idade/4
 
